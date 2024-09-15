@@ -2,9 +2,8 @@ from transformers import pipeline
 from fastapi import FastAPI, Response
 from pydantic import BaseModel
 
-pipe = pipeline("summarization", model="Falconsai/text_summarization")
+# pipe = pipeline("summarization", model="Falconsai/text_summarization")
 
-# generator = pipeline('text-generation', model='gpt2')
 
 app = FastAPI()
 
@@ -20,5 +19,6 @@ def root():
 
 @app.post('/generate')
 def predict(body: Body):
-    results = pipe(body.text, max_length=35, num_return_sequences=1)
+    # results = pipe(body.text, max_length=35, num_return_sequences=1)
+    results = ['Dengoo Nidrapo']
     return results[0]
