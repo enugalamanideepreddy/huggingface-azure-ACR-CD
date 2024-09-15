@@ -14,7 +14,7 @@ class Body(BaseModel):
 
 @app.get('/')
 def root():
-    return Response("<h1>A self-documenting API to interact with a summarizing model</h1>")
+    return Response("<h1>Learn Deploying using MLOps</h1>")
 
 
 @app.post('/generate')
