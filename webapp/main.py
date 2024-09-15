@@ -1,4 +1,4 @@
-from transformers import pipeline
+# from transformers import pipeline
 from fastapi import FastAPI, Response
 from pydantic import BaseModel
 
