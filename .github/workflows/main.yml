@@ -1,4 +1,4 @@
-name: Trigger auto deployment for demo-container
+name:   CD for summarizing app from github to azure containerapp
 
 env:
  AZURE_CONTAINER_APP_NAME: huggingface-acr-cd
